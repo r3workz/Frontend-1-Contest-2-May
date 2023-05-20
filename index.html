@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FrontEnd 1 Contest-2 May 2023">
+    <title>F1-Contest2</title>
+
+    <link rel="icon" href="./assets/acciojob_logo.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" type="text/css" data-noprefix>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+
+<nav id="nav">
+        <a class="nav" href="#">Library System</a>>
+    <ul >
+        <li><a class="nav" href="#books">Books</a></li>
+        <li><a class="nav" href="#register">Register</a></li>
+        <li><a class="nav" href="#" onclick="contactUs()">Contact Us</a></li>
+        <li><a class="nav" href="#" onclick="logOut()">Logout</a></li>
+    </ul>
+</nav>
+
+<section id="books">
+    <h1>Books</h1>
+    <table class="main">
+
+        <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>
+                <a href="https://read.amazon.in/kp/embed?asin=B0018QQQGM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_JQC6KGH0ZRY4THN0VSH9&tag=r3workz" target="_blank">Brida</a>
+                <table class="child">
+                    <tbody>
+                    <tr>
+                        <td>Publication Date: 24 Feb, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Page Count: 240</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-0062315007</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Paulo Coelho</td>
+            <td>Religious & Spiritual Fiction</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <a href="https://read.amazon.in/kp/embed?asin=B00U6SFUSS&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_KTK26CXKAHF718D4F9ED&tag=r3workz" target="_blank">The Alchemist</a>
+                <table class="child">
+                    <tbody>
+                    <tr>
+                        <td>Publication Date: 24 Feb, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Page Count: 218</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-0062315007</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Paulo Coelho</td>
+            <td>Motivational</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <a href="https://read.amazon.in/kp/embed?asin=B0B1PZQ6PX&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_5NK6AFGHX3PBSJNW3T28&tag=r3workz" target="_blank">The Diary of a Young Girl</a>
+                <table class="child">
+                    <tbody>
+                    <tr>
+                        <td>Publication Date: 1 Jan, 2014</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count: 328</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-8172345198</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Anne Frank</td>
+            <td>Holocaust</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                <a href="https://read.amazon.in/kp/embed?asin=B086YCLYBK&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_4HN8X2T3K0QM7CXNV80M&tag=r3workz" target="_blank">Ghosts of The Silent Hills</a>
+                <table class="child">
+                    <tbody>
+                    <tr>
+                        <td>Publication Date: 1 Dec, 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Page Count: 312</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-9389717136</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Anita Krishan</td>
+            <td>Horror</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>
+                <a href="https://read.amazon.in/kp/embed?asin=B07WYYQ5VF&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_RBV4D5PTC3DW5XESFMSK&tag=r3workz" target="_blank">Wish I Could Tell You</a>
+                <table class="child">
+                    <tbody>
+                    <tr>
+                        <td>Publication Date: 4 Oct, 2019
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Page Count: 288</td>
+                    </tr>
+                    <tr>
+                        <td>ISBN: 978-0143448334</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>Durjoy Datta</td>
+            <td>Romance</td>
+            <td>Available</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="register">
+
+    <h1>Register</h1>
+    <form class="form" name="form" method="get" onsubmit="return matchPassword()">
+        <div>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName" placeholder="Enter First Name" required>
+        </div>
+        <div>
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName" placeholder="Enter Last Name" required>
+        </div>
+        <div>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="5" max="100" placeholder="Enter your age.(5-100)" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your Email Address" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Set a Password" required>
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Repeat the same Password" required >
+        </div>
+        <div>
+            <button type="submit" id="submit">Register</button>
+        </div>
+    </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+html{
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    position: relative;
+    background-color: #EDEDED;
+
+}
+h1{
+    width: 95%;
+    margin: auto;
+}
+
+
+/*Navigation Bar*/
+#nav{
+    display: flex;
+    background-color: black;
+    padding: 12px 50px;
+    position: sticky;
+    top: 0;
+    margin: 0 0 40px;
+}
+
+a.nav{
+    text-decoration-line: none;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0 2em 0 0;
+    position: absolute;
+    right: 0;
+}
+li{
+    margin: 0 1em;
+}
+
+
+
+
+/*Table Section*/
+#books{
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    width: 50%;
+    line-height: 2;
+    scroll-behavior: smooth;
+    margin: auto auto 40px;
+}
+table tr td{
+    outline: 1px solid #D7D7D7;
+}
+table.main{
+    width: 95%;
+    margin: auto;
+}
+table.child{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*Form Section*/
+#register{
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 50%;
+    line-height: 2;
+    scroll-behavior: smooth;
+    margin: auto auto 40px;
+}
+form{
+    width: 95%;
+    margin: auto;
+}
+label {
+    display:block
+}
+input {
+    width: 98%;
+    line-height: 2;
+}
+input:focus {
+    border-color: black;
+    outline-color: black;
+    outline-style: dotted;
+}
+#submit{
+    width: 99%;
+    line-height: 2;
+    border: none;
+    margin-top: 15px ;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 4px ;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
