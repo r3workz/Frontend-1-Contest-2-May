@@ -1,3 +1,4 @@
+// Match Password
 function matchPassword(){
     var pass1=document.form.password.value;
     var pass2=document.form.confirm_password.value;
@@ -10,17 +11,19 @@ function matchPassword(){
         return false;
     }
 }
-
+// Contact Us link to email with subject
 function contactUs() {
     if(window.confirm('To Contact us click OK to send an Email to contactus@acciojob.com')){
-        window.location.href='mailto://contactus@acciojob.com';
+        window.location.href='mailto://contactus@acciojob.com?subject=Need%20Assistance';
     }
 }
+// Login alert
 function logOut() {
     alert('You need to login first.');
 }
 
-// function checkPassword(form) {
+// Match Password Not-Working
+// function matchPassword(form) {
 //     const password = form.pass.value;
 //     const confirmPassword = form.cPass.value;
 //     if(password.value !== confirmPassword.value) {
