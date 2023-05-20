@@ -76,6 +76,7 @@ table.child{
     line-height: 2;
     scroll-behavior: smooth;
     margin: auto auto 40px;
+    position: relative;
 }
 form{
     width: 95%;
@@ -87,6 +88,16 @@ label {
 input {
     width: 98%;
     line-height: 2;
+}
+button.reset{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: fit-content;
+    background: none;
+    color: black;
+    padding: 0;
+    border: 0;
 }
 input:focus {
     border-color: black;

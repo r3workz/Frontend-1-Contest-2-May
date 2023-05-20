@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/acciojob_logo.svg">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" type="text/css" data-noprefix>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
@@ -156,7 +157,9 @@
 <section id="register">
 
     <h1>Register</h1>
+
     <form class="form" name="form" method="get" onsubmit="return matchPassword()">
+        <button type="reset" class="reset" title="Reset-Form"><i class="fa-sharp fa-solid fa-undo"></i></button>
         <div>
             <label for="fName">First Name:</label>
             <input type="text" name="fName" id="fName" placeholder="Enter First Name" required>
@@ -186,7 +189,7 @@
             <input type="password" name="confirm_password" id="confirm_password" placeholder="Repeat the same Password" required >
         </div>
         <div>
-            <button type="submit" id="submit">Register</button>
+            <button type="submit" id="submit" title="Register">Register</button>
         </div>
     </form>
 </section>
